@@ -1,13 +1,13 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "client1",
       "password": "clientpass",
       "role": "client"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "merchant1",
       "password": "merchantpass",
       "role": "merchant"
@@ -28,26 +28,45 @@
       "id": "29a0",
       "username": "pkaris",
       "password": "alpindo"
+    },
+    {
+      "id": "70a5",
+      "username": "kariuki",
+      "password": "times"
     }
   ],
   "motorcycles": [
     {
-      "id": 1,
-      "name": "Electric Scooter",
-      "model": "E-Scoot X1",
-      "price": 5000
-    },
-    {
-      "id": 2,
+      "id": "2",
       "name": "Electric Bike",
       "model": "EBike Z1",
-      "price": 10000
+      "price": 10000,
+      "SoH": "95%",
+      "age": "1yr"
     },
     {
       "id": "1d39",
       "name": "xt",
       "model": "6l",
-      "price": 9000
+      "price": 9000,
+      "SoH": "95%",
+      "age": "1yr"
+    },
+    {
+      "id": "dbb7",
+      "name": "intelli3",
+      "model": "v5",
+      "price": 4000,
+      "SoH": "80%",
+      "age": "1yr"
+    },
+    {
+      "id": "305c",
+      "name": "tyu",
+      "model": "44",
+      "price": 7800,
+      "SoH": "70%",
+      "age": "2yrs"
     }
   ]
 }

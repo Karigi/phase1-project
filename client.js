@@ -4,6 +4,12 @@ const clientRegisterModal = document.getElementById("clientRegisterModal");
 const blurredContent = document.getElementById("clientContent");
 const motorcyclesContainer = document.getElementById("motorcyclesContainer");
 
+// Select payment modal and buttons
+const paymentOptionsModal = document.getElementById("paymentOptionsModal");
+const closePaymentModalBtn = document.querySelector(".close-btn");
+const buyBtns = document.querySelectorAll(".buyBtn");
+
+
 // Select login and register buttons
 const loginBtn = document.getElementById("loginBtn");
 const registerBtn = document.getElementById("registerBtn");
@@ -80,16 +86,15 @@ async function fetchMotorcycles() {
             <h3>${motorcycle.name}</h3>
             <p>Model: ${motorcycle.model}</p>
             <p>Price: $${motorcycle.price}</p>
+            <p>SOH: ${motorcycle.SoH}</p>
+            <p>Age: ${motorcycle.age}</p>
             <button class="buyBtn" data-id="${motorcycle.id}">Buy Now</button>
         `;
         motorcyclesContainer.appendChild(motorcycleElement);
     });
 }
 
-// Select payment modal and buttons
-const paymentOptionsModal = document.getElementById("paymentOptionsModal");
-const closePaymentModalBtn = document.querySelector(".close-btn");
-const buyBtns = document.querySelectorAll(".buyBtn");
+
 
 // Show payment options when the "Buy Now" button is clicked
 buyBtns.forEach(btn => {

@@ -81,6 +81,8 @@ async function fetchMotorcycles() {
             <h3>${motorcycle.name}</h3>
             <p>Model: ${motorcycle.model}</p>
             <p>Price: $${motorcycle.price}</p>
+            <p>SOH: ${motorcycle.SoH}</p>
+            <p>Age: ${motorcycle.age}</p>
             <button class="deleteBtn" data-id="${motorcycle.id}">Delete</button>
         `;
         motorcyclesContainerMerchant.appendChild(motorcycleElement);
@@ -125,6 +127,8 @@ document.getElementById("addMotorcycleForm").addEventListener("submit", async (e
         name: document.getElementById("motorcycleName").value,
         model: document.getElementById("motorcycleModel").value,
         price: parseInt(document.getElementById("motorcyclePrice").value),
+        SoH: document.getElementById("motorcycleBatSOH").value,
+        age: document.getElementById("motorcycleBatAge").value
     };
 
     // Send the new motorcycle to db.json via json-server
