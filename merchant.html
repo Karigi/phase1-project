@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Portal</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Merchant Portal</h1>
+        <p>Manage your motorcycles and sell them</p>
+    </header>
+
+    <div class="login-register-container">
+        <button id="loginBtnMerchant">Login</button>
+        <button id="registerBtnMerchant">Register</button>
+    </div>
+
+    <div id="merchantContent" class="blur">
+        <h2>Motorcycles List</h2>
+        <div id="motorcyclesContainerMerchant">
+            <!-- Motorcycles data will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Modal for Login -->
+    <div id="merchantLoginModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Merchant Login</h2>
+            <form id="merchantLoginForm">
+                <input type="text" id="merchantLoginUsername" placeholder="Username" required>
+                <input type="password" id="merchantLoginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Register -->
+    <div id="merchantRegisterModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Merchant Register</h2>
+            <form id="merchantRegisterForm">
+                <input type="text" id="merchantRegisterUsername" placeholder="Username" required>
+                <input type="password" id="merchantRegisterPassword" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+        <!-- Add New Motorcycle Button -->
+    <button id="addNewMotorcycleBtn">Add New Motorcycle</button>
+
+    <!-- Modal for Adding New Motorcycle -->
+    <div id="addMotorcycleModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Add New Motorcycle</h2>
+            <form id="addMotorcycleForm">
+                <input type="text" id="motorcycleName" placeholder="Motorcycle Name" required>
+                <input type="text" id="motorcycleModel" placeholder="Model" required>
+                <input type="number" id="motorcyclePrice" placeholder="Price" required>
+                <button type="submit">Add Motorcycle</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="merchant.js"></script>
+</body>
+</html>

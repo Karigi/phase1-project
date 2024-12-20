@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "client1",
+      "password": "clientpass",
+      "role": "client"
+    },
+    {
+      "id": 2,
+      "username": "merchant1",
+      "password": "merchantpass",
+      "role": "merchant"
+    },
+    {
+      "id": "4669",
+      "username": "pkaris",
+      "password": "alpindo",
+      "role": "merchant"
+    },
+    {
+      "id": "af81",
+      "username": "pkaris",
+      "password": "alpindo",
+      "role": "merchant"
+    },
+    {
+      "id": "29a0",
+      "username": "pkaris",
+      "password": "alpindo"
+    }
+  ],
+  "motorcycles": [
+    {
+      "id": 1,
+      "name": "Electric Scooter",
+      "model": "E-Scoot X1",
+      "price": 5000
+    },
+    {
+      "id": 2,
+      "name": "Electric Bike",
+      "model": "EBike Z1",
+      "price": 10000
+    },
+    {
+      "id": "1d39",
+      "name": "xt",
+      "model": "6l",
+      "price": 9000
+    }
+  ]
+}
